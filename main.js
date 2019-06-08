@@ -145,7 +145,7 @@ const runSpin = function () {
     let insub = spinData[sub == 7 ? 8 : sub];
     let deg = 0;
     let dur = 0;
-    let rotate = 25; // defualt 25
+    let rotate = 15; // defualt 25
     let finrotate = 360 * rotate;
     let latitude = Math.floor(Math.random(-20.2) * 20.2);
     latitude = ["min", "plus"][Math.floor(Math.random(1) * 2)] == "min" ? latitude = latitude - (latitude * 2) : latitude;
