@@ -17,14 +17,12 @@ body {
 		}
 		.spin-parent {
 			position: relative;
-			border:10px solid var(--white);
+			border:15px solid var(--white);
 			border-radius: 100%;
 			overflow:hidden;
 			height: 400px;
 			width: 400px;
 			display: block;
-			transition: transform 1s linear;
-			transform-origin: 50% 50%;
 		}
 		.spin-image {
 			width: 100%;
@@ -51,9 +49,18 @@ body {
 			bottom: 0;
 			transform-origin: top center;
 		}
+		#parent-spin {
+			position: relative;
+			overflow:hidden;
+			max-height: 400px;
+			max-width: 400px;
+			border-radius: 100%;
+			transition: transform 1s linear;
+			transform-origin: 50% 50%;
+		}
 		.spiner-button {
-			height: 60px;
-			width: 60px;
+			height: 70px;
+			width: 70px;
 			border-radius: 100%;
 			overflow:hidden;
 			position: absolute;
@@ -121,6 +128,39 @@ body {
 			top: -2px;
 			z-index: 9;
 		}
-		.op-0 {
-			opacity: 0;
+		.dot-spin {
+			position: absolute;
+			z-index: 9;
+		}
+		.dot-spin:nth-child(2) {
+			right: 29%;
+			bottom: 3.4%;
+		}
+		.dot-spin:nth-child(3) {
+			right: 4%;
+			bottom: 29%;
+		}
+		.dot-spin:nth-child(4) {
+			right: 3.7%;
+			bottom: 65%;
+		}
+		.dot-spin:nth-child(5) {
+			right: 28.7%;
+			top: 2.7%;
+		}
+		.dot-spin:nth-child(6) {
+			left: 29.7%;
+			top: 2.3%;
+		}
+		.dot-spin:nth-child(7) {
+			left: 3.2%;
+			bottom: 64.3%;
+		}
+		.dot-spin:nth-child(8) {
+			left: 4.7%;
+			bottom: 27%;
+		}
+		.dot-spin:nth-child(9) {
+			left: 32%;
+			bottom: 2.2%;
 		}
